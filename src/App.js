@@ -4,7 +4,7 @@ import './assets/css/Article-List.css';
 import './assets/css/Login-Form-Clean.css';
 import './assets/css/Navigation-Clean.css';
 import './assets/css/Team-Boxed.css';
-import Background from './assets/img/Hands.png';
+import Background from 'assets/img/Hands.png';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
@@ -13,20 +13,6 @@ class App extends React.Component {
   return (
     <div className="App">
       <AmplifySignOut />
-      <nav className="navbar navbar-light navbar-expand" id="sidebar-wrapper">
-        <div className="container"><button dataToggle={true} className="navbar-toggler d-none" dataTarget={''}></button>
-            <div className="collapse navbar-collapse">
-                <ul className="nav navbar-nav sidebar-nav" id="sidebar-nav">
-                    <li className="nav-item sidebar-brand" role="presentation"><a className="nav-link active js-scroll-trigger" href="#page-top">Reachout</a></li>
-                    <li className="nav-item sidebar-nav-item" role="presentation"><a className="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
-                    <li className="nav-item sidebar-nav-item" role="presentation"><a className="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li className="nav-item sidebar-nav-item" role="presentation"><a className="nav-link js-scroll-trigger" href="#services">Services</a></li>
-                    <li className="nav-item sidebar-nav-item" role="presentation"><a className="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                    <li className="nav-item sidebar-nav-item" role="presentation"><a className="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
     <header className="d-flex masthead" style={{backgroundImage: 'url(' + {Background} +')' }}>
         <div className="container my-auto text-center" style={{height: '100px'}}>
             <h1 className="mb-1" style={{color: '#f4e287'}}>ReachOut</h1>
@@ -35,7 +21,7 @@ class App extends React.Component {
                 <table className="table table-bordered">
                     <thead>
                         <tr>
-                            <th><button className="btn btn-primary btn-lg text-capitalize border rounded" type="button" style={{fontSize: '48px'}}>Register</button></th>
+                            <th><button className="btn btn-primary btn-lg text-capitalize border rounded" type="button">Register</button></th>
                             <th><button className="btn btn-primary btn-lg text-capitalize border rounded" type="button">Login</button></th>
                         </tr>
                     </thead>
