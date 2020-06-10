@@ -9,7 +9,7 @@ class App extends React.Component {
     <div className="App">
       <AmplifySignOut />
       <nav className="navbar navbar-light navbar-expand" id="sidebar-wrapper">
-        <div className="container"><button dataToggle={collapse=true} className="navbar-toggler d-none" dataTarget={''}></button>
+        <div className="container"><button dataToggle={true} className="navbar-toggler d-none" dataTarget={''}></button>
             <div className="collapse navbar-collapse">
                 <ul className="nav navbar-nav sidebar-nav" id="sidebar-nav">
                     <li className="nav-item sidebar-brand" role="presentation"><a className="nav-link active js-scroll-trigger" href="#page-top">Reachout</a></li>
@@ -22,7 +22,7 @@ class App extends React.Component {
             </div>
         </div>
     </nav>
-    <header className="d-flex masthead" style={{backgroundImage: 'url)' + assets/img/Hands.png +')'}}>
+    <header className="d-flex masthead" style={{backgroundImage: 'url(' + assets/img/Hands.png +')'}}>
         <div className="container my-auto text-center" style={{height: '100px'}}>
             <h1 className="mb-1" style={{color: '#f4e287'}}>ReachOut</h1>
             <h3 className="mb-5"><em style={{color: '#7cf4e6'}}>... and be for eachother</em></h3>
