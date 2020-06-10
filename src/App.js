@@ -7,7 +7,6 @@ import './assets/css/Team-Boxed.css';
 import './assets/js/jquery.min.js';
 import './assets/bootstrap/js/bootstrap.min.js';
 import './assets/js/stylish-portfolio.js';
-import 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js';
 import Background from './assets/img/Hands.png';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
