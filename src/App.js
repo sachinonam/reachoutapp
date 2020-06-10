@@ -4,7 +4,7 @@ import './assets/css/Article-List.css';
 import './assets/css/Login-Form-Clean.css';
 import './assets/css/Navigation-Clean.css';
 import './assets/css/Team-Boxed.css';
-import Background from 'assets/img/Hands.png';
+import Background from './assets/img/Hands.png';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
