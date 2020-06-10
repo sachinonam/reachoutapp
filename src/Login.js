@@ -1,14 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './assets/css/Article-List.css';
 import './assets/css/Login-Form-Clean.css';
 import './assets/css/Navigation-Clean.css';
 import './assets/css/Team-Boxed.css';
-import './App.cs';
+import './App.js';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
-class Login extends Component {
-    render() {
-        return (
+function Login() {
+    render() (
             <div className="App">
                 <h1 className="text-center">SignIn</h1>
                 <div className="login-clean">
@@ -31,6 +30,5 @@ class Login extends Component {
             </div>
         );
     }
-}
 
-export default withAuthenticator(App, true);
+    export default withAuthenticator(App, true);
