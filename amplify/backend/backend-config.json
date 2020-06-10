@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"reachoutappb2ea704b": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}
