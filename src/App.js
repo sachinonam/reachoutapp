@@ -4,6 +4,10 @@ import './assets/css/Article-List.css';
 import './assets/css/Login-Form-Clean.css';
 import './assets/css/Navigation-Clean.css';
 import './assets/css/Team-Boxed.css';
+import './assets/js/jquery.min.js';
+import './assets/bootstrap/js/bootstrap.min.js';
+import './assets/js/stylish-portfolio.js';
+import 'https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js';
 import Background from './assets/img/Hands.png';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
@@ -13,7 +17,7 @@ class App extends React.Component {
   return (
     <div className="App">
       <AmplifySignOut />
-    <header className="d-flex masthead" style={{backgroundImage: 'url(' + {Background} +')' }}>
+    <div className="d-flex masthead" style={{backgroundImage: 'url(' + {Background} +')' }}>
         <div className="container my-auto text-center" style={{height: '100px'}}>
             <h1 className="mb-1" style={{color: '#f4e287'}}>ReachOut</h1>
             <h3 className="mb-5"><em style={{color: '#7cf4e6'}}>... and be for eachother</em></h3>
@@ -31,7 +35,7 @@ class App extends React.Component {
                 </table>
             </div>
         </div>
-    </header>
+    </div>
     <div className="container text-center">
         <div className="row">
             <div className="col-lg-10 mx-auto">
@@ -40,10 +44,6 @@ class App extends React.Component {
             </div>
         </div>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="assets/js/stylish-portfolio.js"></script>
     </div>
   );
 }
