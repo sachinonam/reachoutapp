@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './assets/css/Article-List.css';
+import './assets/css/Login-Form-Clean.css';
+import './assets/css/Navigation-Clean.css';
+import './assets/css/Team-Boxed.css';
+import Background from './assets/img/Hands.png';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 
@@ -22,7 +27,7 @@ class App extends React.Component {
             </div>
         </div>
     </nav>
-    <header className="d-flex masthead" style={{backgroundImage: 'url(' + assets/img/Hands.png +')'}}>
+    <header className="d-flex masthead" style={{backgroundImage: 'url(' + {Background} +')' }}>
         <div className="container my-auto text-center" style={{height: '100px'}}>
             <h1 className="mb-1" style={{color: '#f4e287'}}>ReachOut</h1>
             <h3 className="mb-5"><em style={{color: '#7cf4e6'}}>... and be for eachother</em></h3>
